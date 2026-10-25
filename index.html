@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saffron &amp; Stone — An Artful Take on Modern Dining</title>
+  <meta name="description" content="Saffron &amp; Stone is a modern fine-dining restaurant serving seasonal tasting menus and à la carte dishes. A HTML and CSS portfolio demo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Saffron &amp; Stone home">Saffron <span>&amp;</span> Stone</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-gold btn-sm" href="#reserve">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80" alt="An elegantly plated fine-dining dish on a dark table">
+      <div class="container hero-content">
+        <h1>An Artful Take on Modern Dining</h1>
+        <p>Seasonal ingredients, open-fire cooking and quiet, considered service. Saffron &amp; Stone is a dining room built around the pleasure of slowing down.</p>
+        <a class="btn btn-gold" href="#menu">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section class="section" id="signature">
+      <div class="container">
+        <header class="section-head">
+          <h2>Signature dishes</h2>
+          <p>Four plates that define the kitchen, refined over many seasons.</p>
+        </header>
+        <div class="dish-grid">
+          <article class="dish">
+            <div class="dish-media"><img loading="lazy" src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=700&q=80" alt="Seared scallops with herbs on a white plate"></div>
+            <h3>Saffron Scallops</h3>
+            <p>Hand-dived scallops, saffron beurre blanc and pickled fennel.</p>
+            <p class="price">$34</p>
+          </article>
+          <article class="dish">
+            <div class="dish-media"><img loading="lazy" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Grilled steak with vegetables and sauce"></div>
+            <h3>Stone-Fired Ribeye</h3>
+            <p>Dry-aged for 35 days, finished over embers with bone marrow jus.</p>
+            <p class="price">$62</p>
+          </article>
+          <article class="dish">
+            <div class="dish-media"><img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=80" alt="Fresh seasonal salad with colourful vegetables"></div>
+            <h3>Garden Harvest</h3>
+            <p>Heirloom vegetables from our partner farm, whipped goat curd, toasted seeds.</p>
+            <p class="price">$26</p>
+          </article>
+          <article class="dish">
+            <div class="dish-media"><img loading="lazy" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Delicate plated dessert with berries and cream"></div>
+            <h3>Honey &amp; Pistachio</h3>
+            <p>Warm honey sponge, pistachio cream and sea-salt caramel.</p>
+            <p class="price">$18</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-green" id="story">
+      <div class="container split">
+        <figure class="split-media">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Warmly lit restaurant dining room with set tables">
+        </figure>
+        <div class="split-copy">
+          <h2>Our philosophy</h2>
+          <p class="lead">We cook with what the land gives us that week, and not a day sooner.</p>
+          <p>Our menu changes with the seasons and often with the morning delivery. We work with a small circle of growers, fishers and foragers, then let the ingredient decide the dish.</p>
+          <p>Technique serves flavour here. Slow ferments, careful butchery and a wood-fired hearth give each plate depth without fuss, so that every course tastes precisely of itself.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <h2>Menu highlights</h2>
+          <p>A selection from tonight’s menu. Prices are sample figures for this demo.</p>
+        </header>
+        <div class="menu-grid">
+          <section class="menu-col" aria-labelledby="m-starters">
+            <h3 id="m-starters">Starters</h3>
+            <ul>
+              <li><span class="item"><strong>Burrata &amp; Roasted Figs</strong><em>Thyme honey, walnut crumb</em></span><span class="price">$16</span></li>
+              <li><span class="item"><strong>Beef Tartare</strong><em>Smoked egg yolk, capers, rye crisp</em></span><span class="price">$19</span></li>
+              <li><span class="item"><strong>Charred Leek</strong><em>Romesco, hazelnut, chive oil</em></span><span class="price">$14</span></li>
+              <li><span class="item"><strong>Saffron Arancini</strong><em>Taleggio, lemon aioli</em></span><span class="price">$15</span></li>
+            </ul>
+          </section>
+          <section class="menu-col" aria-labelledby="m-mains">
+            <h3 id="m-mains">Main Course</h3>
+            <ul>
+              <li><span class="item"><strong>Wood-Roasted Duck</strong><em>Cherry glaze, celeriac purée</em></span><span class="price">$44</span></li>
+              <li><span class="item"><strong>Line-Caught Sea Bass</strong><em>Saffron broth, clams, samphire</em></span><span class="price">$41</span></li>
+              <li><span class="item"><strong>Wild Mushroom Risotto</strong><em>Aged parmesan, truffle butter</em></span><span class="price">$29</span></li>
+              <li><span class="item"><strong>Slow-Braised Lamb</strong><em>Pomegranate, freekeh, mint</em></span><span class="price">$46</span></li>
+            </ul>
+          </section>
+          <section class="menu-col" aria-labelledby="m-desserts">
+            <h3 id="m-desserts">Desserts</h3>
+            <ul>
+              <li><span class="item"><strong>Dark Chocolate Tart</strong><em>Olive oil, flaked sea salt</em></span><span class="price">$15</span></li>
+              <li><span class="item"><strong>Poached Pear</strong><em>Vanilla mascarpone, almond tuile</em></span><span class="price">$14</span></li>
+              <li><span class="item"><strong>Cardamom Panna Cotta</strong><em>Rhubarb, pistachio</em></span><span class="price">$13</span></li>
+              <li><span class="item"><strong>Cheese Selection</strong><em>Three regional cheeses, quince</em></span><span class="price">$21</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <img class="experience-img" loading="lazy" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1800&q=80" alt="Candlelit restaurant interior with warm lighting">
+      <div class="container experience-content">
+        <h2>The dining experience</h2>
+        <p>Low light, linen, and a kitchen you can see from your seat. Choose a five-course tasting menu with paired wines, or stay à la carte at the chef’s counter.</p>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <h2>Gallery</h2>
+          <p>A look at the plates, the room and the people behind them.</p>
+        </header>
+        <div class="gallery-grid">
+          <figure class="g-wide"><img loading="lazy" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="A spread of freshly prepared dishes on a wooden table"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Skewers grilling over open flame"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Colourful bowl of fresh ingredients"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=700&q=80" alt="Precisely plated fine-dining course"></figure>
+          <figure><img loading="lazy" src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80" alt="Guests dining at a restaurant table"></figure>
+          <figure class="g-wide"><img loading="lazy" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1000&q=80" alt="Toast topped with egg and fresh garnishes"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-green">
+      <div class="container">
+        <header class="section-head">
+          <h2>Kind words from our guests</h2>
+          <p>Sample reviews written for this demo.</p>
+        </header>
+        <div class="review-grid">
+          <blockquote class="review">
+            <p>The scallops alone were worth the trip. Warm, unhurried service and a room that makes you want to stay for hours.</p>
+            <footer>Amelia R., anniversary dinner</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Every course felt considered without being fussy. The lamb was the best thing I ate all year.</p>
+            <footer>Daniel K., tasting menu guest</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>We brought clients here and it did the talking for us. Excellent wine pairings, and the dessert is a must.</p>
+            <footer>Priya S., business dinner</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+      <div class="container reserve-inner">
+        <h2>Reserve your table</h2>
+        <p>Tell us the date, time and party size by email, or call us during opening hours. We reply within one working day. Demo contact details only.</p>
+        <div class="reserve-actions">
+          <a class="btn btn-green" href="mailto:reservations@saffronandstone.example?subject=Table%20reservation&amp;body=Date%3A%0ATime%3A%0AParty%20size%3A%0AName%3A">Email a request</a>
+          <a class="btn btn-outline" href="tel:+15550142020">Call +1 555 014 2020</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#home" aria-label="Saffron &amp; Stone home">Saffron <span>&amp;</span> Stone</a>
+        <p class="footer-tag">Modern dining, seasonally cooked.</p>
+      </div>
+      <address>
+        <h2 class="footer-title">Visit</h2>
+        <p>[Street address placeholder]<br>[City, Postcode]</p>
+        <p><a href="tel:+15550142020">+1 555 014 2020</a><br><a href="mailto:hello@saffronandstone.example">hello@saffronandstone.example</a></p>
+      </address>
+      <div>
+        <h2 class="footer-title">Opening hours</h2>
+        <ul class="hours">
+          <li><span>Tuesday to Thursday</span><span>5:30 pm – 10:00 pm</span></li>
+          <li><span>Friday and Saturday</span><span>5:30 pm – 11:00 pm</span></li>
+          <li><span>Sunday lunch</span><span>12:00 pm – 3:30 pm</span></li>
+          <li><span>Monday</span><span>Closed</span></li>
+        </ul>
+      </div>
+      <nav aria-label="Social links">
+        <h2 class="footer-title">Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.tripadvisor.com/" rel="noopener">Tripadvisor</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Saffron &amp; Stone. A portfolio demo; menu, prices, reviews and contact details are sample content. Photography via Unsplash.</p>
+    </div>
+  </footer>
+</body>
+</html>
